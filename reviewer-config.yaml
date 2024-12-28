@@ -1,0 +1,14 @@
+llm:
+  oai:
+    model_name: gpt-4o-2024-05-13
+    api_key: <your-api-key>
+    base_url: ~
+  claude:
+    model: ~
+    api_key: ~
+    base_url: ~
+
+projects:
+  test-project:
+    url: https://dev.example.com
+    private_token: <your-project-token>

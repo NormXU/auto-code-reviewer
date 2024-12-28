@@ -1,0 +1,37 @@
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.11.5
+    hooks:
+      - id: isort
+        files: auto_reviewer/
+  - repo: https://github.com/google/yapf
+    rev: v0.40.2
+    hooks:
+      - id: yapf
+        files: auto_reviewer/
+        exclude: auto_reviewer/prompt_lib.py
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: trailing-whitespace
+        files: auto_reviewer/
+      - id: check-yaml
+        files: auto_reviewer/
+      - id: end-of-file-fixer
+        files: auto_reviewer/
+      - id: double-quote-string-fixer
+        files: auto_reviewer/
+      - id: check-merge-conflict
+        files: auto_reviewer/
+      - id: fix-encoding-pragma
+        files: auto_reviewer/
+        args: ["--remove"]
+      - id: mixed-line-ending
+        files: auto_reviewer/
+        args: ["--fix=lf"]
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.0.0
+    hooks:
+      - id: pyupgrade
+        files: auto_reviewer/
+        args: ["--py310-plus"]
