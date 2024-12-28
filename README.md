@@ -64,3 +64,5 @@ You can also specify a different LLM provider, like:
 ```
 @reviewer-bot:claude
 ```
+## Thanks for These Awesome Projects
+- https://github.com/mimo-x/Code-Review-GPT-Gitlab
