@@ -22,7 +22,7 @@ llm:
     base_url: ~  # Optional, default is the OpenAI API endpoint
 
   claude:
-    model: ~  # If using Claude, specify the model here
+    model_name: ~  # If using Claude, specify the model here
     api_key: ~  # Replace with your Claude API key
     base_url: ~  # Optional, specify Claude's API base URL
     
@@ -35,12 +35,10 @@ projects:
 ```
 
 ### 2. **Obtain API Keys and Tokens**
-
-- **For GitLab Private Token:**
-  - Log into your GitLab account.
-  - Go to **Settings** > **Access Tokens**.
-  - Create a new token with at least the **read_repository** scope.
-  - Replace `<your-project-token>` in the config file with this private token.
+- Log into your GitLab account.
+- Go to **Settings** > **Access Tokens**.
+- Create a new token with at least the **read_repository** scope.
+- Replace `<your-project-token>` in the config file with this private token.
 
 ### 3. **Start the Application**
 
